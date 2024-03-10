@@ -73,8 +73,8 @@
     <option value = "緑">緑</option>
     <option value = "黄">黄</option>
   </select>
-  <img src="IMG_8548.JPG" class = "ii">
-  
+  <img id="chg" src="IMG_8548.JPG" class = "ii">
+
 
   <script>
     ft = [...Array(10)].map((_,i)=>i)
@@ -83,14 +83,31 @@
       document.getElementById("demo").innerHTML = "あなたの選んだ色は" + e + "色です。";
       console.log(e)
       document.getElementById("no").innerHTML = "";
+      let uu = 'IMG_8549.JPG';
       if (e == "黄"){
         document.getElementById("no").innerHTML = "しかしまあ" + e + "色選ぶかね。";
         console.log('黄色て')
         document.getElementById("array").innerHTML = ft
+        
+        gg = document.getElementById("chg")
+        gg.src = uu
       }
     }
     console.log(ft)
     //自分の手
+
+    let iai = [
+    {
+        "name":"sakai",
+    "email":"sakai@gmail.com",
+    "old":48
+    },
+    {
+        "name":"oai",
+    "email":"oai@gmail.com",
+    "old":73
+    },
+]
     
   </script>
 </body>
