@@ -14,7 +14,7 @@
   <canvas id="canvas001" width="200" height="200">
     canvas要素をサポートしていません。
   </canvas>
-  <h1 class="card ml-5 mr-5 border-info rounded-5 shadow-sm">oko</h1>
+  <h1 class="hu">oko</h1>
   <div class="matome">
     <div class="one">
       <div class="one">
@@ -23,8 +23,7 @@
       </div>
     </div>
     <p>年号は何</p>
-  <a href="" class="btn btn--orange btn--radius">押して</a><br><br>
-  <button class="btn2">II</button><br><br>
+  <a href="link.html" class="btn btn--orange btn--radius">押して</a><br><br>
   <form>
     <input>iii</input>
   </form><br>
@@ -42,16 +41,6 @@
         <td>10人</td>
       </tr>
     </table>
-    <table>
-      <tr>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>2</td>
-      <tr>
-    </table>
-    <br>
-      
     
   <p>ppp<span>sss</span><span>sss</span></p>
 </div>
@@ -75,19 +64,34 @@
       PUSH
   </div>
   </section>
+  <p id="demo">下のボックスから色を選んでください</p>
+  <p id="no"></p>
+  <p id="array"></p>
   <select id = "mySelect" onchange = "myFunction()">
     <option value = "赤">赤</option>
     <option value = "青">青</option>
     <option value = "緑">緑</option>
     <option value = "黄">黄</option>
   </select>
-  <p id="demo"></p>
+  <img src="IMG_8548.JPG" class = "ii">
+  
 
   <script>
-    function myFunction(){
+    ft = [...Array(10)].map((_,i)=>i)
+        function myFunction(){
       var e = document.getElementById("mySelect").value;
       document.getElementById("demo").innerHTML = "あなたの選んだ色は" + e + "色です。";
+      console.log(e)
+      document.getElementById("no").innerHTML = "";
+      if (e == "黄"){
+        document.getElementById("no").innerHTML = "しかしまあ" + e + "色選ぶかね。";
+        console.log('黄色て')
+        document.getElementById("array").innerHTML = ft
+      }
     }
+    console.log(ft)
+    //自分の手
+    
   </script>
 </body>
 </html>
