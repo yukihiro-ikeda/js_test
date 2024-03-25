@@ -1,0 +1,116 @@
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  background-color: #606f92;
+  /* opacity: 0.6; */
+  height: 50px;
+  width: 100%;
+}
+
+.flower{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+header ul{
+  display: flex;
+  color: white;
+}
+
+header li{
+  margin: 0 30px 0 20px;
+  padding-right: 10px;
+  border-right: 1px solid white;
+}
+
+.one{
+  height: 200px;
+  width: 300px;
+  display: inline-block;
+  background-color: aqua;
+  opacity: 0.6;
+  vertical-align: top;
+}
+
+.one p{
+  line-height: 200px;
+  color: crimson;
+  text-align: center;
+  margin: 0;
+  /* vertical-align: middle; */
+}
+
+.two{
+  height: 200px;
+  width: 300px;
+  display: inline-block;
+  background-color: aqua;
+  opacity: 0.6;
+}
+
+/* .two p{
+  line-height: 200px;
+  color:black;
+  text-align: center;
+  margin: 0;
+} */
+
+.three{
+  height: 200px;
+  width: 300px;
+  display: inline-block;
+  background-color: aqua;
+  opacity: 0.6;
+  vertical-align: top;
+}
+
+.three p{
+  line-height: 200px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.one:empty{background-color: aqua;}
+.two:empty{background-color: rgb(192, 162, 64);}
+.three:empty{background-color: rgb(114, 209, 51);}
+
+.side{
+  height: 1000px;
+  width: 180px;
+  background-color: white;
+  margin: 20px 0 0 10px;
+}
+
+.side a{
+  padding-top: 20px;
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.main{
+  height: 1000px;
+  width: 700px;
+  background-color: white;
+  margin: 20px 10px 0 10px;
+}
+
+.main p{
+  text-align: center;
+}
+
+/* sideとmainをdiv{.new}で囲んでdisplay flexを適応 */
+.new{
+  width: 900px;
+  display: flex;
+  background-color: whitesmoke;
+}
+/* sideとmainをdiv{.new}で囲んでdisplay flexを適応 */

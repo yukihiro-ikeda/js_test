@@ -9,12 +9,20 @@
 </head>
 <body>
   <header>
-    <h1>yu</h1>
+    <ul class="yuio">
+      <li>月曜</li>
+      <li>火曜</li>
+      <li>水曜</li>
+      <li>木曜</li>
+      <li>金曜</li>
+    </ul>
   </header>
   <canvas id="canvas001" width="200" height="200">
     canvas要素をサポートしていません。
   </canvas>
-  <h1 class="hu">oko</h1>
+    
+  <div id ="noe" ></div>
+  
   <div class="matome">
     <div class="one">
       <div class="one">
@@ -23,7 +31,7 @@
       </div>
     </div>
     <p>年号は何</p>
-  <a href="link.html" class="btn btn--orange btn--radius">押して</a><br><br>
+  <a href="link.html">押して</a><br><br>
   <form>
     <input>iii</input>
   </form><br>
@@ -74,7 +82,41 @@
     <option value = "黄">黄</option>
   </select>
   <img id="chg" src="IMG_8548.JPG" class = "ii">
+<br>
 
+=========================
+
+  hit blow
+  <p id="demo2">下のボックスから数字を選んでください</p>
+  <p id="no2"></p>
+  <p id="array2"></p>
+
+  <select id = "mySelect1" onchange = "newmyFunction()">
+    <option value = "0">0</option>
+    <option value = "1">1</option>
+    <option value = "2">2</option>
+    <option value = "3">3</option>
+    <option value = "4">4</option>
+    <option value = "5">5</option>
+    <option value = "6">6</option>
+    <option value = "7">7</option>
+    <option value = "8">8</option>
+    <option value = "9">9</option>
+  </select>
+  <select id = "mySelect2" disabled onchange = "newmyFunction()">
+    <option value = "0">0</option>
+    <option value = "1">1</option>
+    <option value = "2">2</option>
+    <option value = "3">3</option>
+  </select>
+  <select id = "mySelect3" disabled onchange = "newmyFunction()">
+    <option value = "0">0</option>
+    <option value = "1">1</option>
+    <option value = "2">2</option>
+    <option value = "3">3</option>
+  </select>
+
+  <p id ="enemy"></p>
 
   <script>
     ft = [...Array(10)].map((_,i)=>i)
@@ -87,14 +129,33 @@
       aa = document.getElementById("chg")
       aa.src = "IMG_8548.JPG"
       if (e == "黄"){
-        document.getElementById("no").innerHTML = "しかしまあ" + e + "色選ぶかね。";
-        console.log('黄色て')
+        document.getElementById("no").innerHTML = "" + e + "色。";
+        console.log('黄色です')
         document.getElementById("array").innerHTML = ft
         
         gg = document.getElementById("chg")
         gg.src = uu
       }
     }
+
+    var y = document.getElementById("mySelect3");
+function newmyFunction(){
+  
+  var x = document.getElementById("mySelect3").value;
+  // if(y == 1){
+    y.remove(x)
+  }
+  // if (y == 0)
+  console.log(y)
+
+
+
+
+
+
+
+
+
     console.log(ft)
     //自分の手
 
@@ -110,8 +171,28 @@
     "old":73
     },
 ]
+console.log(iai)
     
+// random
+sense = [...Array(10)].map((_,i)=>i);
+new_sense = []
+for(i=sense.length;i>=0;i--){
+  k = Math.floor(Math.random() * i);
+  tmp = sense.splice(k,1);
+  new_sense.push(tmp);
+}
+
+newnew = []
+for(i=0;i<=2;i++){
+  newnew.push(new_sense[i][0])
+}
+
+
+enemy = document.getElementById("enemy")
+enemy.innerHTML = newnew
+
   </script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
 </body>
 </html>
 

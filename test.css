@@ -1,19 +1,35 @@
+header ul{
+  background-color: rgb(10, 25, 233);
+  opacity: 0.6;
+  display: flex;
+}
+
+header li{
+  padding-left: 10px;
+}
+
 #no {
   color: rgb(179, 182, 14);
 }
 
-#canvas001{
-  background-color: red;
-  display: inline-block;
-  height: 39px;
+#demo2{
+  text-decoration: underline;
+  text-decoration-color: darkorange;
 }
 
-.hu{
-  display: inline-block;
+#canvas001{
+  background-color: red;
+  display: block;
   height: 39px;
 }
 
 .ii{
   width: 50px;
   height: 50px;
+}
+
+
+
+#noe{
+  clear: left;
 }
